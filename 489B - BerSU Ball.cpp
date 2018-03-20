@@ -43,7 +43,5 @@ int main()
     }
     qsort(b, sizeof b / sizeof *b, sizeof(int), compare);
 
-
-
     return 0;
 }
