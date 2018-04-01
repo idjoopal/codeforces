@@ -1,25 +1,24 @@
 #include <stdio.h>
+#include <string.h>
 #include <malloc.h>
 
+int dfs(){
+
+}
 int main()
 {
-    int n;
-    int *a;
-    int *b;
-    int *c;
+    int n, m;
+    char** input;
+    scanf("%d %d", &n, &m);
 
-    scanf("%d", &n);
+    input = (int**)malloc((n+1)*sizeof(int*));
 
-    a = (int*)malloc(n*sizeof(int));
-    b = (int*)malloc(n*sizeof(int));
-    c = (int*)malloc(n*sizeof(int));
+    for(int i=0; i<n; i++){
+        input[i] = (int*)malloc((m+1)*sizeof(int));
+    }
 
-    for(int i=0;i<n; i++){
-        scanf("%d %d", &a[i], &b[i]);
-
-        if(a[i] == 0){
-            c[1] == b[i];
-        }
+    for(int i=0; i<n; i++){
+        scanf("%s", input[i]);
     }
 
 
