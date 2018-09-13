@@ -7,6 +7,7 @@ int main(void){
 
     char input[5010];
     int dp[5010];
+    
     dp[0]=1;
     dp[1]=1;
 
